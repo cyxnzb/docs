@@ -31,7 +31,7 @@ Now you know what nodes and connections are, what they are for and what they loo
 How can I access the graph editor?
 -------------------------------------
 
-The graph editor is not a separate program, it is included in the bot dll (or .so, if you are using Linux). To open it, create a LAN/Listen Server game, select the map you want to node and start the game as usual. As soon as you are in the map, you can activate the editing mode from the console by typing ``yb graphmenu`` or if you have bound a key for it, simply by pressing that key.
+The graph editor is not a separate program, it is included in the bot dll (or .so, if you are using Linux). To open it, create a LAN/Listen Server game, select the map you want to create the graph for, and start the game as usual. As soon as you are in the map, you can activate the editing mode from the console by typing ``yb graphmenu`` or if you have bound a key for it, simply by pressing that key.
 
 
 Graph console commands Summary
@@ -539,7 +539,7 @@ YaPB has 9 flags for nodes, which are:
 Debug Goal menu
 =========================
 
-To test the bots walkability to a specified node, you need to open the second page of "Node Operations" menu, and select ``1. Debug Goal``. Then a menu should appear as shown in the picture below.
+To test the bots walkability to a specified node, you need to open the second page of "Graph Editor" menu, and select ``1. Debug Goal``. Then a menu should appear as shown in the picture below.
 
 .. figure:: images/debug_goal_menu.png
     :align: center
