@@ -187,7 +187,7 @@ Yellow arrows are pointing to your cached node.
 Adding nodes
 =========================
 
-Adding a node is really easy. Just walk to the position where you want a node to be inserted, bring up your node menu:
+Adding a node is really easy. Just walk to the position where you want a node to be inserted, bring up your graph editor:
 
 .. figure:: images/waypoint_menu_page1.png
     :align: center
@@ -385,7 +385,7 @@ The good news first: You don't have to set every single :blue:`Radius` manually,
 Now you might wonder "Well, if the editor does all this for me, why would I change radius by hand?" The answer is simple,the editor helps, but it isn't perfect, it cannot detect all kinds of obstacles (I can't go too much into detail here because all this is pretty much map-related). Anyway, you will see places where the radius cuts into an obstacle - it could be a very thin pillar, a fence, or even a solid-looking car that's parked in the streets... as I said, it depends on how the mapper built these elements.
 Another problem is not with walls, but with holes and cliffs, If there is no high obstacle, the editor will regard an area as clear and set a big radius, it doesn't care if right next to the node there's a yawning abyss where bots will fall to death!
 So these are areas where you will have to keep a watchful eye on your radius and if necessary, change them by hand. In narrow corridors and especially around narrow doorways, you will see that even a small radius calculated by the editor doesn't make the bots navigate precisely enough. In such places, I strongly recommend lowering the radius to zero.
-In order to change the radius of a node, bring up the node menu and select "\ :green:`8. Set Radius`\ ". The following menu will appear:
+In order to change the radius of a node, bring up the graph editor and select "\ :green:`8. Set Radius`\ ". The following menu will appear:
 
 .. figure:: images/setradius_menu.png
     :align: center
@@ -405,7 +405,7 @@ Connecting Nodes
 =======================
 
 Nodes alone aren't sufficient to make bots move the way you want. They must be connected with other nodes in order to let bots reach their goal. By default, connections up to a certain distance will be made automatically.
-You can select the automatic connection distance (AutoPath Max Distance, APMD) by bringing up the node menu and selecting "7. Set Autopath Distance". The following sub-menu will appear:
+You can select the automatic connection distance (AutoPath Max Distance, APMD) by bringing up the graph editor and selecting "7. Set Autopath Distance". The following sub-menu will appear:
 
 .. figure:: images/autopath_distance_menu.png
     :align: center
@@ -480,7 +480,7 @@ Here's how it works (Look at the screenshot below), let's pretend we wanted to d
 Removing path connections
 ------------------------------
 
-To delete a path connection, you must open the node menu and select ``4. Delete path``. 
+To delete a path connection, you must open the graph editor and select ``4. Delete path``. 
 
 After deleting the path connection, you may notice that the outgoing path connection has been removed (from the node where you are standing to the node you selected) as you can see in picture below:
 
@@ -502,7 +502,7 @@ Select ``4. Delete path`` again to delete the incoming path connection.
 Adding path connections
 ---------------------------
 
-To add a path connection, you must open the node menu and select ``3. Create path``. Then a menu should appear as shown in the picture below.
+To add a path connection, you must open the graph editor and select ``3. Create path``. Then a menu should appear as shown in the picture below.
 
 .. figure:: images/path_directions_menu.png
     :align: center
