@@ -16,7 +16,7 @@ Pressing the "=" key in game a menu with the following options should appear on 
     This is the YaPB user menu
     
 1. **Control Bots** - A menu that adds or removes bots from the game.
-2. **Features** - A menu that configures the type of weapons used by bots, opens the waypoints menu, toggles debug mode and controls bots commands.
+2. **Features** - A menu that configures the type of weapons used by bots, opens the graph editor menu, toggles debug mode and controls bots commands.
 3. **Fill Server** - A menu that fills the server with bots with the specified parameters.
 4. **End Round** - Kills all bots for the end of round.
 
@@ -28,8 +28,8 @@ Bots Control Menu
 
     Bots Control Menu
     
-1. **Add a Bot, Quick** - This does what it says. It quickly adds a Bot giving him a random name, team, difficulty and model. Difficulty will be chosen randomly between your yb_difficulty_min/yb_difficulty_max values specified in yapb.cfg.
-2. **Add a Bot, Specified** - Allows you specify all things (except name) for adding a single Bot.
+1. **Quick add bot** - This does what it says. It quickly adds a Bot giving him a random name, team, difficulty and model. Difficulty will be chosen randomly between your yb_difficulty_min/yb_difficulty_max values specified in yapb.cfg.
+2. **Add specific bot** - Allows you specify all things (except name) for adding a single Bot.
 
 .. figure:: images/bots_difficulty_level.png
     :align: center
@@ -56,9 +56,9 @@ Bots Control Menu
 
     This lets You choose a class for the specific Bot. (for T Team)
     
-3. **Remove Random Bot** - removes a random bot.
-4. **Remove All Bots** - removes all bots from the server.
-5. **Remove Bot Menu** - A menu that allows you to remove a bot from the server specified in the list.
+3. **Remove random bot** - removes a random bot.
+4. **Remove all bots** - removes all bots from the server.
+5. **Bot removal menu** - A menu that allows you to remove a bot from the server specified in the list.
 
 
 Bots Features Menu
@@ -69,62 +69,62 @@ Bots Features Menu
 
     Bots Features Menu
     
-1. **Weapon Mode Menu** - A menu that configures the type of weapons used by bots.
+1. **Weapon mode menu** - A menu that configures the type of weapons used by bots.
 
 .. figure:: images/bots_weapon_mode.png
     :align: center
 
     Bots Weapon Mode Menu
 
-2. **Waypoint Menu** - Opens the waypoint menu.
-3. **Select Personality** - Adds a bot with the currently set difficulty with personality setting.
-4. **Toggle Debug Mode** - Enables or disables debug mode.
-5. **Command Menu** - Opens the bot command menu.
+2. **Graph editor** - Opens the graph editor.
+3. **Select personality** - Adds a bot with the currently set difficulty with personality setting.
+4. **Toggle debug mode** - Enables or disables debug mode.
+5. **Command menu** - Opens the bot command menu.
 
 .. figure:: images/bot_commandmenu.png
     :align: center
 
     Bot Command Menu
     
-1. **Make Double Jump** - Forces the nearest teammate bot to crouch next to you to make double jump.
-2. **Finish Double Jump** - Releases the bot after the first command, it must get up and go about his business.
-3. **Drop the C4 Bomb** - Forces the bot carrying the bomb to drop it at you.
-4. **Drop the Weapon** - Makes the teammate bot throw a weapon at you.
+1. **Make double jump** - Forces the nearest teammate bot to crouch next to you to make double jump.
+2. **Finish double jump** - Releases the bot after the first command, it must get up and go about his business.
+3. **Drop the C4 bomb** - Forces the bot carrying the bomb to drop it at you.
+4. **Drop the weapon** - Makes the teammate bot throw a weapon at you.
 
 .. Note:: Bot will only throw a weapon at you when it have a primary weapon and 2000 or more dollars in the account.
 
-Waypoint Menu
+Graph Editor
 ------------------
 
 .. figure:: images/waypoint_menu_page1.png
     :align: center
 
-    Waypoint Editor Menu (Page 1)
+    Graph Editor Menu (Page 1)
     
-1. **Show/Hide waypoints** - Show or hide the display of waypoints.
-2. **Cache waypoint** - Cache waypoint for future use.
+1. **Show/Hide nodes** - Show or hide the display of nodes.
+2. **Cache node** - Cache node for future use.
 3. **Create path** - Opens the menu for creating path connections.
-4. **Delete path** - Removes the path from selected waypoint.
-5. **Add waypoint** - Opens the menu for selecting the type for adding waypoint.
-6. **Delete waypoint** - Removes the waypoint you are standing on.
-7. **Set Autopath Distance** - Opens the autopath distance setting menu.
-8. **Set Radius** - Opens the waypoint radius setting menu.
-9. **Next...** - Goes to the second page of the waypoint menu.
+4. **Delete path** - Removes the path from selected node.
+5. **Add node** - Opens the menu for selecting the type for adding node.
+6. **Delete node** - Removes the node you are standing on.
+7. **Set autopath distance** - Opens the autopath distance setting menu.
+8. **Set radius** - Opens the node radius setting menu.
+9. **Next...** - Goes to the second page of the graph editor menu.
 
 .. figure:: images/waypoint_menu_page2.png
     :align: center
 
-    Waypoint Editor Menu (Page 2)
+    Graph Editor Menu (Page 2)
 
-1. **Debug goal** - Opens a menu for debugging bot walkability to a specified waypoint.
-2. **Autowaypoint on/off** - Enables or disables automatic waypoint placement.
-3. **Set flags** - Opens the menu for selecting flags for a waypoint.
-4. **Save waypoints** - Saves waypoints with path integrity check.
-5. **Save without checking** - Saves waypoints without checking (because of this, there may be problems with the behavior of bots).
-6. **Load waypoints** - Loads waypoints from a file.
-7. **Check waypoints** - Checks waypoints for errors.
+1. **Debug goal** - Opens a menu for debugging bot walkability to a specified node.
+2. **Auto node placement on/off** - Enables or disables automatic node placement.
+3. **Set flags** - Opens the menu for selecting flags for a node.
+4. **Save graph** - Saves nodes into graph file with path integrity check.
+5. **Save without checking** - Saves nodes without checking (because of this, there may be problems with the behavior of bots).
+6. **Load graph** - Loads nodes from a graph file.
+7. **Check graph** - Checks nodes for errors.
 8. **Noclip cheat on/off** - Enables or disables noclip cheat.
-9. **Previous...** - Goes to the first page of the waypoint menu.
+9. **Previous...** - Goes to the first page of the graph editor menu.
 
 
 YaPB console commands Summary
@@ -309,8 +309,8 @@ Where ``[user_id]`` is bot's ID, which you can find by entering the ``yb list`` 
 Adding bots to the game
 ============================
 
-Select ``1. Add a Bot, Quick`` from the bot control menu to add a bot with random stats (name, difficulty, personality etc.)
-Select ``2. Add a Bot, Specified`` from the bot control menu to add a bot with manually specified stats.
+Select ``1. Quick add bot`` from the bot control menu to add a bot with random stats (name, difficulty, personality etc.)
+Select ``2. Add specific bot`` from the bot control menu to add a bot with manually specified stats.
 
 Or type in console ``yb_quota x`` where X is amount of adding bots.
 
