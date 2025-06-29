@@ -189,14 +189,14 @@ Adding nodes
 
 Adding a node is really easy. Just walk to the position where you want a node to be inserted, bring up your graph editor:
 
-.. figure:: images/waypoint_menu_page1.png
+.. figure:: images/graph_editor_page1.png
     :align: center
 
     Graph Editor Menu (Page 1).
 	
 To add a node, simply select ``5. Add node``. A new menu will appear, the "\ :green:`Node Type`\ " menu. All node types described below can be added by using this menu.
 
-.. figure:: images/waypoint_type_menu.png
+.. figure:: images/node_type_menu.png
     :align: center
 
     Node Type Menu.
@@ -530,7 +530,7 @@ YaPB has 9 flags for nodes, which are:
 #. Crouch Down - a flag that causes bots to crouch when reaching this node.
 #. Camp Point - a flag that makes the node as a camp point. If you add this flag, it opens the menu to choose the start and end direction of the bot's view when it's camping.
 
-.. figure:: images/waypoint_flags_menu.png
+.. figure:: images/node_flags_menu.png
     :align: center
 
     Node Flags Menu

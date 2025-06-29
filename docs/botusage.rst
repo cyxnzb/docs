@@ -96,7 +96,7 @@ Bots Features Menu
 Graph Editor
 ------------------
 
-.. figure:: images/waypoint_menu_page1.png
+.. figure:: images/graph_editor_page1.png
     :align: center
 
     Graph Editor Menu (Page 1)
@@ -111,7 +111,7 @@ Graph Editor
 8. **Set radius** - Opens the node radius setting menu.
 9. **Next...** - Goes to the second page of the graph editor menu.
 
-.. figure:: images/waypoint_menu_page2.png
+.. figure:: images/graph_editor_page2.png
     :align: center
 
     Graph Editor Menu (Page 2)
